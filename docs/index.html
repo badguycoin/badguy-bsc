@@ -45,7 +45,7 @@
             color: #0f0;
         }
 
-        .buttons a {
+        .buttons a, .extra-links a {
             display: inline-block;
             margin: 10px;
             padding: 12px 24px;
@@ -57,16 +57,16 @@
             transition: 0.3s;
         }
 
-        .buttons a:hover {
+        .buttons a:hover, .extra-links a:hover {
             background: #f00;
             color: #000;
         }
 
-        .airdrop-link {
-            margin-top: 40px;
+        .airdrop-link, .holders-link, .whitepaper-link {
+            margin-top: 30px;
         }
 
-        .airdrop-link a {
+        .airdrop-link a, .holders-link a, .whitepaper-link a {
             display: inline-block;
             background: #f00;
             color: #000;
@@ -77,7 +77,7 @@
             text-decoration: none;
         }
 
-        .airdrop-link a:hover {
+        .airdrop-link a:hover, .holders-link a:hover, .whitepaper-link a:hover {
             background: #900;
             color: #fff;
         }
@@ -87,19 +87,27 @@
     <h1>BADGUY</h1>
     <p class="tagline">Every Hero Needs One</p>
 
-    <div class="countdown" id="countdown">Launching in: --d --h --m --s</div>
+    <div class="countdown" id="countdown">Launching: 28 May, 14:00 CET</div>
 
     <div class="buttons">
-        <a href="https://t.me/badguybsc" target="_blank">Join Telegram</a>
+        <a href="https://t.me/BadguyToken" target="_blank">Join Telegram</a>
         <a href="https://x.com/BadguyBSC" target="_blank">Follow on X</a>
     </div>
 
     <div class="airdrop-link">
-        <a href="https://forms.gle/J5pFk1Ts8QVeJYVs5" target="_blank">Join the Airdrop</a>
+        <a href="https://forms.gle/J5pFk1Ts8QVeJYVs5" target="_blank">Claim Airdrop (1,000 $BAD)</a>
+    </div>
+
+    <div class="holders-link">
+        <a href="https://t.me/+mDZg_jqWZtUzMzk0" target="_blank">🔒 Holders-Only Channel</a>
+    </div>
+
+    <div class="whitepaper-link">
+        <a href="BADGUY_Whitepaper_May2025.pdf" target="_blank">📄 Read Whitepaper</a>
     </div>
 
     <script>
-        const targetDate = new Date("2025-05-27T14:00:00+02:00").getTime();
+        const targetDate = new Date("2025-05-28T14:00:00+02:00").getTime();
 
         function updateCountdown() {
             const now = new Date().getTime();
