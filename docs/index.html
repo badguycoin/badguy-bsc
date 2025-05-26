@@ -62,38 +62,22 @@
             color: #000;
         }
 
-        form {
+        .airdrop-link {
             margin-top: 40px;
-            background: #222;
-            padding: 20px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 400px;
         }
 
-        form input[type="text"],
-        form input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border: none;
-            font-size: 1em;
-        }
-
-        form button {
-            margin-top: 12px;
-            padding: 10px 20px;
+        .airdrop-link a {
+            display: inline-block;
             background: #f00;
-            border: none;
-            border-radius: 8px;
             color: #000;
+            padding: 14px 28px;
+            border-radius: 10px;
             font-weight: bold;
-            font-size: 1em;
-            cursor: pointer;
+            font-size: 1.1em;
+            text-decoration: none;
         }
 
-        form button:hover {
+        .airdrop-link a:hover {
             background: #900;
             color: #fff;
         }
@@ -110,12 +94,9 @@
         <a href="https://x.com/BadguyBSC" target="_blank">Follow on X</a>
     </div>
 
-    <form action="https://formspree.io/f/xoqgzqgq" method="POST">
-        <h2>Join the Airdrop</h2>
-        <input type="text" name="wallet" placeholder="Your BSC Wallet Address" required>
-        <input type="email" name="email" placeholder="Your Email (optional)">
-        <button type="submit">Submit</button>
-    </form>
+    <div class="airdrop-link">
+        <a href="https://forms.gle/J5pFk1Ts8QVeJYVs5" target="_blank">Join the Airdrop</a>
+    </div>
 
     <script>
         const targetDate = new Date("2025-05-26T14:00:00+02:00").getTime();
